@@ -1,0 +1,583 @@
+/*  codigo provisorio fonte */
+
+@font-face {
+    font-family: 'poke';
+    src: url(./fonte/pkmfonte.ttf);
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+body {   
+    font-family: 'poke', 'poppins', sans-serif;
+    font-size: normal;
+    max-width: 1380px;
+    margin: 0 auto;
+    background-color: #DCDCDC;
+    color: #333333;
+}
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;   
+}
+header { 
+    background:url("imagem/headpokeball.jpg")
+}
+header .logo, .imagem-botao{
+   
+    width: 100px;
+    transition: 0.2s ease-in-out;
+}
+header .pokedex {
+    width: 200px;
+}
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+main {
+    padding: 25px;
+}
+main .listagem-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+main .cartao-pokemon{
+    background-color: #f5f5f5;
+    width: 230px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+main .bordagramaveneno {
+    border-bottom: 6px solid #a59;
+    border-right: 6px solid #a59;
+    border-left: 6px solid #7c5;
+    border-top: 6px solid #7c5;
+    }
+
+main .bordafogovoador {
+
+    border-bottom: 6px solid #89f;
+    border-right: 6px solid #89f;
+    border-left: 6px solid #f42;
+    border-top: 6px solid #f42;
+    
+    
+}
+
+main .bordainsetovoador {
+
+    border-bottom: 6px solid #89f;
+    border-right: 6px solid #89f;
+    border-left: 6px solid #ab2;
+    border-top: 6px solid #ab2;
+    
+    
+}
+
+main .bordainsetoveneno {
+
+    border-bottom: 6px solid #a59;
+    border-right: 6px solid #a59;
+    border-left: 6px solid #ab2;
+    border-top: 6px solid #ab2;
+    
+    
+}
+
+main .bordavoadornormal {
+
+    border-bottom: 6px solid #aa9;
+    border-right: 6px solid #aa9;
+    border-left: 6px solid #89f;
+    border-top: 6px solid #89f;
+    
+    
+}
+
+main .bordavenenoterra {
+
+    border-bottom: 6px solid #db5;
+    border-right: 6px solid #db5;
+    border-left: 6px solid #a59;
+    border-top: 6px solid #a59;
+    
+    
+}
+
+main .bordafadanormal {
+
+    border-bottom: 6px solid #aa9;
+    border-right: 6px solid #aa9;
+    border-left: 6px solid #e9e;
+    border-top: 6px solid #e9e;
+    
+    
+}
+
+main .bordavoadorveneno {
+
+    border-bottom: 6px solid #a59;
+    border-right: 6px solid #a59;
+    border-left: 6px solid #89f;
+    border-top: 6px solid #89f;
+    
+    
+}
+
+main .bordainsetograma {
+
+    border-bottom: 6px solid #7c5;
+    border-right: 6px solid #7c5;
+    border-left: 6px solid #ab2;
+    border-top: 6px solid #ab2;
+    
+    
+}
+main .bordaagualutador {
+
+    border-bottom: 6px solid #b54;
+    border-right: 6px solid #b54;
+    border-left: 6px solid #39f;
+    border-top: 6px solid #39f;
+    
+    
+}
+
+main .bordaaguaveneno {
+
+    border-bottom: 6px solid #a59;
+    border-right: 6px solid #a59;
+    border-left: 6px solid #39f;
+    border-top: 6px solid #39f;
+    
+    
+}
+
+main .bordafogovoador {
+
+    border-bottom: 6px solid #89f;
+    border-right: 6px solid #89f;
+    border-left: 6px solid #f42;
+    border-top: 6px solid #f42;
+    
+    
+}
+
+main .bordapedraterra {
+
+    border-bottom: 6px solid #db5;
+    border-right: 6px solid #db5;
+    border-left: 6px solid #ba6;
+    border-top: 6px solid #ba6;
+    
+    
+}
+
+main .bordaaguapsiquico {
+
+    border-bottom: 6px solid #f59;
+    border-right: 6px solid #f59;
+    border-left: 6px solid #39f;
+    border-top: 6px solid #39f;
+    
+    
+}
+
+main .bordaeletricoaco {
+
+    border-bottom: 6px solid #aab;
+    border-right: 6px solid #aab;
+    border-left: 6px solid #fc3;
+    border-top: 6px solid #fc3;
+    
+    
+}
+
+main .bordaaguagelo {
+
+    border-bottom: 6px solid #6cf;
+    border-right: 6px solid #6cf;
+    border-left: 6px solid #39f;
+    border-top: 6px solid #39f;
+    
+    
+}
+
+main .bordafogovoador {
+
+    border-bottom: 6px solid #89f;
+    border-right: 6px solid #89f;
+    border-left: 6px solid #f42;
+    border-top: 6px solid #f42;
+    
+    
+}
+
+main .bordafantasmaveneno {
+
+    border-bottom: 6px solid #a59;
+    border-right: 6px solid #a59;
+    border-left: 6px solid #66b;
+    border-top: 6px solid #66b;
+    
+    
+}
+
+main .bordagramapsiquico {
+
+    border-bottom: 6px solid #f59;
+    border-right: 6px solid #f59;
+    border-left: 6px solid #7c5;
+    border-top: 6px solid #7c5;
+    
+    
+}
+
+main .bordagelopsiquico {
+
+    border-bottom: 6px solid #f59;
+    border-right: 6px solid #f59;
+    border-left: 6px solid #6cf;
+    border-top: 6px solid #6cf;
+    
+    
+}
+
+main .bordapedraagua {
+
+    border-bottom: 6px solid #39f;
+    border-right: 6px solid #39f;
+    border-left: 6px solid #ba6;
+    border-top: 6px solid #ba6;
+    
+    
+}
+
+main .bordapedravoador {
+
+    border-bottom: 6px solid #89f;
+    border-right: 6px solid #89f;
+    border-left: 6px solid #ba6;
+    border-top: 6px solid #ba6;
+    
+    
+}
+
+main .bordagelovoador {
+
+    border-bottom: 6px solid #89f;
+    border-right: 6px solid #89f;
+    border-left: 6px solid #6cf;
+    border-top: 6px solid #6cf;
+    
+    
+}
+
+main .bordaeletricovoador {
+
+    border-bottom: 6px solid #89f;
+    border-right: 6px solid #89f;
+    border-left: 6px solid #fc3;
+    border-top: 6px solid #fc3;
+    
+    
+}
+
+main .bordafogovoador {
+
+    border-bottom: 6px solid #89f;
+    border-right: 6px solid #89f;
+    border-left: 6px solid #f42;
+    border-top: 6px solid #f42;
+    
+    
+}
+
+main .bordadragaovoador {
+
+    border-bottom: 6px solid #89f;
+    border-right: 6px solid #89f;
+    border-left: 6px solid #76e;
+    border-top: 6px solid #76e;
+    
+    
+}
+
+main .bordafogo {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #f42;
+   
+    
+}
+
+main .bordaagua {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #39f;
+   
+    
+}
+main .bordagrama {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #7c5;
+   
+    
+}
+main .bordaveneno {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #a59;
+   
+    
+}
+main .bordainseto {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #ab2;
+   
+    
+}
+main .bordaeletrico {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #fc3;
+    
+    
+}
+main .bordanormal {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #aa9;
+    
+}
+main .bordavoador {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #89f;
+    
+    
+}
+main .bordafantasma {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #66b;
+   
+    
+}
+main .bordaaco {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #aab;
+    
+    
+}
+main .bordapsiquico {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #f59;
+  
+    
+}
+main .bordafada {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #e9e;
+    
+    
+}
+main .bordaterra {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #db5;
+   
+    
+}
+main .bordapedra {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #ba6;
+   
+    
+}
+main .bordadragao {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #76e;
+    
+    
+}
+main .bordagelo {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #6cf;
+   
+    
+}
+
+main .bordalutador {
+
+    border-width: 6px; 
+    border-style: solid; 
+    border-color: #b54;
+    
+    
+}
+
+
+/* fim dos cards */
+
+header .cartao-pokemon:hover {
+    background-color: #96d9d6;
+}
+
+.modo-escuro .cartao-pokemon {
+    background-color: #a8a8a8;
+}
+
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform:capitalize;
+    font-size: 25px;
+      
+}
+main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+main .cartao-pokemon .tipo {
+    padding: 11px;
+    border-radius: 10px;
+    
+}
+main .descricao {
+    max-height: 90px;
+    overflow: scroll;
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+
+.grama {
+    background-color: #7c5;
+}
+
+.veneno {
+    background-color: #a59;
+}
+
+.fogo {
+    background-color: #f42;
+}
+
+.inseto {
+    background-color: #ab2;
+}
+
+.agua {
+    background-color: #39f;
+}
+
+.normal {
+    background-color: #aa9;
+}
+
+.voador {
+    background-color: #89f;
+}
+
+.eletrico {
+
+    background-color: #fc3;
+}
+
+.terra {
+    background-color: #db5;
+}
+
+.pedra {
+    background-color: #ba6;
+}
+
+.gelo {
+    background-color: #6cf;
+}
+
+.psiquico {
+    background-color: #f59;
+}
+
+.fada {
+    background-color: #e9e;
+}
+
+.lutador {
+    background-color: #b54;
+}
+
+.dragao {
+    background-color: #76e;
+}
+
+.fantasma {
+    background-color: #66b;
+}
+
+
+.aco {
+    background-color: #aab;
+}
+
